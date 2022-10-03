@@ -24,7 +24,6 @@ class MainApplication:
         self.parent.minsize(400, 0)
         self.parent.resizable(False, False)
         self.parent.title("Bluebeam Studio Markup Database Tool")
-        self.parent.iconbitmap(r"Resources/Icon/shark.ico")
         # top menu
         self.menubar = tk.Menu(self.parent)
         self.filemenu = tk.Menu(self.menubar, tearoff=0)
@@ -330,7 +329,6 @@ class MainApplication:
         root_epd.title('Edit Past Date')
         root_epd.geometry("360x180")
         root_epd.resizable(False, False)
-        root_epd.iconbitmap(r"Resources/Icon/shark.ico")
 
         self.cursor.execute('''SELECT DISTINCT update_time FROM files''')
         all_runs = self.cursor.fetchall()
@@ -451,7 +449,6 @@ class MainApplication:
         root_custom_export.title('Custom Export')
         root_custom_export.geometry('450x200')
         root_custom_export.resizable(False, False)
-        root_custom_export.iconbitmap(r"Resources/Icon/shark.ico")
 
         self.cursor.execute('''SELECT DISTINCT update_time FROM files''')
         all_runs = self.cursor.fetchall()
@@ -575,7 +572,6 @@ class MainApplication:
         root_guide = tk.Tk()
         root_guide.title('Guide')
         root_guide.geometry("800x700")
-        root_guide.iconbitmap(r"Resources/Icon/shark.ico")
 
         body_text = f"""Welcome to Bluebeam Studio Markup Database Help\n    
 Get started 
@@ -622,7 +618,6 @@ Help
         root_about.title('About...')
         root_about.geometry("440x200")
         root_about.resizable(False, False)
-        root_about.iconbitmap(r"Resources/Icon/shark.ico")
 
         welcome = tk.Label(root_about, text="""
     Welcome to Bluebeam Studio Markup Database Help
